@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CliniCOre - Admin panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <button id="logoutBtn" class="btn">Chiqish</button>
+  </header>
+
+  <section>
+    <h2>Fikrlarni boshqarish</h2>
+    <div id="commentsContainer"></div>
+
+    <h3>Yangi fikr qo'shish</h3>
+    <form id="commentForm">
+      <label for="author">Ism:</label>
+      <input type="text" id="author" name="author" required />
+
+      <label for="content">Izoh:</label>
+      <textarea id="content" name="content" rows="3" required></textarea>
+
+      <label for="rating">Baholash (1-5):</label>
+      <input type="number" id="rating" name="rating" min="1" max="5" required />
+
+      <button type="submit" class="btn">Qo'shish</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
